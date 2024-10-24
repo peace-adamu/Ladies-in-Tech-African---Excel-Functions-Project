@@ -1,6 +1,7 @@
 # Project Title: Ladies in Tech Africa - Excel Functions
 
 ##  Table of Contents
+- [Acknowledgments](#acknowledgments)
 - [Project Preview](#docs/project-preview.md)
 - [Project Objective](#project-objective)
 - [Project Significance](#project-significance)
@@ -8,6 +9,11 @@
 - [Prerequisites](#Prerequisities)
 - [Discussion of Result](#discussion-of-result)
 - [Conclusion](#conclusion)
+
+## Acknowledgments
+I would like to express my deepest gratitude to the following individuals and organizations for their support and guidance throughout this project:
+First and foremost, I acknowledge the Ladies in Tech African organization for providing the platform and resources necessary to develop my skills in Excel and data analysis. Their commitment to empowering women in technology is truly inspiring.
+I would also like to extend my sincere appreciation to my tutor, Adamu Mu'azu, whose expertise, patience, and dedication were instrumental in my success. His guidance and feedback were invaluable, and I am grateful for the opportunity to learn from him.
 
 ## Project Preview
 This project, Ladies in Tech African Excel Project, aims to demonstrate the application of basic Excel functions and data analysis techniques using a sample dataset of worker salaries across different states in a company. The project will cover various Excel functions, including basic arithmetic functions, text cleaning, and VLOOKUP for salary structure.
@@ -138,6 +144,7 @@ VLOOKUP was used to fill the table with salary components (Basic, Housing, Trans
 - Returns value in column 7 (Utility).
 7. Gross: =VLOOKUP($E$9, $B$2:$I$16, 8, FALSE)
 -Returns value in column 8 (Gross).
+
 ![excel3a](https://github.com/user-attachments/assets/04bbd54e-67cb-4b8a-b0f3-59af9497dbca)
 
 ## Conclusion

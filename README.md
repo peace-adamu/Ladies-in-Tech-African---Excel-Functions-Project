@@ -7,6 +7,7 @@
 - [Methodology](#methodology)
 - [Prerequisites](#Prerequisities)
 - [Discussion of Result](#discussion-of-result)
+- [Conclusion](#conclusion)
 
 ## Project Preview
 This project, Ladies in Tech African Excel Project, aims to demonstrate the application of basic Excel functions and data analysis techniques using a sample dataset of worker salaries across different states in a company. The project will cover various Excel functions, including basic arithmetic functions, text cleaning, and VLOOKUP for salary structure.
@@ -37,6 +38,7 @@ The methodology for this project involves hands-on practice with Excel functions
 - Basic knowledge of Excel.
 - Access to a computer with Excel installed.
 - The sample dataset was gotten from Ladies in Tech Africa, provided as part of this project.
+- Github for creating of report.
 
 ## Discussion of Results
 This project successfully demonstrates the effective utilization of Excel functions to manage and analyze data, showcasing proficiency in:
@@ -47,7 +49,7 @@ This project successfully demonstrates the effective utilization of Excel functi
 
 ### Excel Function 1: Basic Functions
  ![excel1a](https://github.com/user-attachments/assets/13f476e3-80e2-4d77-9715-f052201e70ba)
-### Calculations:
+#### Calculations:
 
 - Grand Total of Salaries: =SUM(D8:D27) → 56,165,334
 - Average Salary: =AVERAGE(D8:D27) → 2,808,267
@@ -57,17 +59,36 @@ This project successfully demonstrates the effective utilization of Excel functi
 - Fourth Highest Salary: =LARGE(D8:D27, 4) → 4,740,966.00
 - Third Lowest Salary: =SMALL(D8:D27, 3) → 1,358,916.00
 
-### Conditional Functions:
+#### Conditional Functions:
 - Bayelsa Total Salary : =SUMIF(C8:C27,C11,D8:D27)
 - Average Oyo Salary: =AVERAGEIF(C8:C27,C21,D8:D27)
 - Highest Salary (Edo): =MAXIFS()
 - Lowest Salary Taraba: =MINIFS()
 - Total Number of Staff in Nasarawa: =COUNTIFS()
 
+### Excel Function 2: Text Extraction
+Extracting department code, purchase date code, access category code from a code using Excel functions.
+
+#### Code Structure:
+- Department Code (first 2 digits)
+- Purchase Date Code (next 6 digits)
+- Access Category Code (last 4 digits)
+#### Functions Used:
+1. Department Code: =LEFT(B10,2)
+- Extracts the first 2 characters from the code in cell B10.
+2. Purchase Date Code: =MID(B10,3,6)
+- Extracts 6 characters starting from the 3rd position in the code in cell B10.
+3. Access Category Code: =RIGHT(B10,4)
+- Extracts the last 4 characters from the code in cell B10.
+Code format is consistent (2 digits for Department, 6 digits for Purchase Date, 4 digits for Access Category).
+Example Table:
+![excel2a](https://github.com/user-attachments/assets/50b32bb5-441d-4353-8e72-337472a83e9b)
+
 ### Excel Function 2: Text Cleaning
 Functions Used:
+![excel2b](https://github.com/user-attachments/assets/8925c08b-5378-410c-9e23-bc9731cb1bb2)
 
-![excel2a](https://github.com/user-attachments/assets/bd93f9ac-b051-472d-8a03-16a957477451)
+
 #### Name Cleaning
 - Remove Unnecessary Spaces: =TRIM(B5)
 - Removes leading, trailing, and excess spaces from the name in cell B5.
@@ -80,17 +101,17 @@ Functions Used:
 - Proper Case & Trim: =PROPER(TRIM(B5))
 - Combines proper case and trim functions.
   
-  ![excel2b](https://github.com/user-attachments/assets/8aed2d05-9260-4f45-874e-74970517cd56)
+  ![excel2c](https://github.com/user-attachments/assets/8742bf5c-39ff-4719-85a7-6b22614dab20)
 #### Company Name Cleaning
 - Proper Case: =PROPER(C5)
 - Capitalizes the first letter of each word in the company name in cell C5.
   
-![excel2c](https://github.com/user-attachments/assets/4c5d5c22-a33e-44b3-bfc4-6da09ddb4ef9)
+  ![excel2d](https://github.com/user-attachments/assets/9fcc5fd3-7b54-4e9e-8cf3-4b0d23b19667)
 #### Text Cleaning 3: Combining First & Last Names
 - Formula: =B6 & " " & C6 or =CONCATENATE(B6, " ", C6)
 -Combines first name (B6) and surname (C6) with a space.
 
-![excel2d](https://github.com/user-attachments/assets/a5077adb-50d6-4f94-ad0f-94e6e9d53eb9)
+![excel2e](https://github.com/user-attachments/assets/1696fed7-62db-43bb-a02b-39b7512fa745)
 #### Text Cleaning 4: Extracting Names from Email
 First name from email: =LEFT(B6, FIND(".", B6)-1)
 Surname from email: =MID(B6, FIND(".", B6)+1, FIND("@", B6)-1 - FIND(".", B6))

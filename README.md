@@ -1,8 +1,8 @@
-# Project Title: Ladies in Tech Africa - Excel Functions
+# Project Title: Ladies in Tech Africa - Excel Functions - [Project Preview](#docs/project-preview.md)![-5808992407017075915_121](https://github.com/user-attachments/assets/9d0d4849-1975-434e-9a0f-50d8e10a1588)
+
 
 ##  Table of Contents
 - [Acknowledgments](#acknowledgments)
-- [Project Preview](#docs/project-preview.md)
 - [Project Objective](#project-objective)
 - [Project Significance](#project-significance)
 - [Methodology](#methodology)
